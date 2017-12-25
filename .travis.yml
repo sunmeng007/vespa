@@ -13,6 +13,7 @@ cache:
 branches:
   only:
   - master
+  - sunmeng
 
 before_cache:
   - sudo rm -rf $HOME/.m2/repository/com/yahoo/vespa
