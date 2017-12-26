@@ -3,9 +3,9 @@
 set -e
 
 export SOURCE_DIR=/source
-export NUM_THREADS=6
+export NUM_THREADS=16
 export MALLOC_ARENA_MAX=1
-export MAVEN_OPTS="-Xms128m -Xmx2g"
+export MAVEN_OPTS="-Xms2g -Xmx2g"
 source /etc/profile.d/devtoolset-7.sh || true
 
 ccache --max-size=1250M
