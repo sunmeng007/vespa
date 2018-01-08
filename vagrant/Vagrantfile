@@ -4,7 +4,7 @@
 # For a complete reference, please see the online documentation at https://docs.vagrantup.com.
 Vagrant.configure("2") do |config|
 
-  config.vm.box = "boxcutter/centos7-desktop"
+  config.vm.box = "/Users/sunmeng/Desktop/recommend/boxcutter/centos/box/virtualbox/centos7-desktop-0.0.99.box"
 
   config.ssh.forward_agent = true
 
@@ -15,8 +15,8 @@ Vagrant.configure("2") do |config|
     vb.gui = true
     vb.name = "vespa-dev"
 
-    vb.memory = "8192"
-    vb.cpus = 4
+    vb.memory = "2048"
+    vb.cpus = 2
   end
   
   # Install required and nice-to-have packages
